@@ -8,8 +8,21 @@ Foi feito para ser instalado no **PC do balconista/dono** como um programa comum
 do Windows (**instalador `.exe`**), sem precisar de internet nem de banco de
 dados externo — os dados ficam salvos localmente na própria máquina.
 
-> Este é um módulo independente dentro do repositório JBank-Mobile, na pasta
-> `pharmacy-desktop/`. Ele **não** depende do aplicativo Android nem o altera.
+> Projeto **independente** e autocontido: não usa banco de dados, não precisa
+> de internet e só depende da biblioteca padrão do Java.
+
+---
+
+## 📸 Telas
+
+### Pedidos — cliente, taxa de entrega e itens do pedido
+![Tela de Pedidos](docs/screenshots/pedidos.png)
+
+### Admin — controle de estoque com alertas por situação
+![Tela de Estoque/Admin](docs/screenshots/admin.png)
+
+### Dashboard — resumo do dia e alertas
+![Dashboard](docs/screenshots/dashboard.png)
 
 ---
 
