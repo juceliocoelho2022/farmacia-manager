@@ -1,5 +1,12 @@
 # 💊 Sistema Farmácia — Gestão e PDV (Desktop)
 
+![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=openjdk&logoColor=white)
+![UI](https://img.shields.io/badge/UI-Java%20Swing-blue)
+![Build](https://img.shields.io/badge/build-javac%20%2B%20jpackage-informational)
+![Tests](https://img.shields.io/badge/tests-JUnit%205-success)
+![Plataforma](https://img.shields.io/badge/plataforma-Windows%20%C2%B7%20Linux%20%C2%B7%20macOS-lightgrey)
+![License](https://img.shields.io/badge/license-MIT-brightgreen)
+
 Aplicativo **desktop em Java (Swing)** para uma farmácia gerenciar o dia a dia:
 controle de **estoque**, **ponto de venda (PDV)**, **histórico de vendas** e um
 **painel com alertas** (estoque baixo e produtos vencendo).
@@ -20,6 +27,9 @@ dados externo — os dados ficam salvos localmente na própria máquina.
 
 ### Admin — controle de estoque com alertas por situação
 ![Tela de Estoque/Admin](docs/screenshots/admin.png)
+
+### Finanças — histórico de pedidos e total faturado
+![Tela de Finanças](docs/screenshots/financas.png)
 
 ### Dashboard — resumo do dia e alertas
 ![Dashboard](docs/screenshots/dashboard.png)
@@ -148,3 +158,10 @@ com.farmacia
 - **Java 17+** • **Swing** (interface gráfica) • **JUnit 5** (testes)
 - **jpackage** + **WiX** para o instalador `.exe`
 - Persistência local por serialização (sem banco de dados)
+
+---
+
+## 📄 Licença
+
+Distribuído sob a licença **MIT**. Veja o arquivo [`LICENSE`](LICENSE) para mais
+detalhes.
