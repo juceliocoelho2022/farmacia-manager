@@ -1,0 +1,5 @@
+# Saidas de compilacao e empacotamento
+build/
+dist/
+dist-installer/
+*.class
