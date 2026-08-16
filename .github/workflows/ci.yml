@@ -1,0 +1,52 @@
+name: CI
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  test:
+    name: Testes (JDK ${{ matrix.java }})
+    runs-on: ubuntu-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        java: [ '17', '21' ]
+    steps:
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar JDK ${{ matrix.java }}
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: ${{ matrix.java }}
+
+      - name: Rodar testes de unidade (JUnit 5)
+        run: bash test.sh
+
+  build:
+    name: Compilar e gerar JAR
+    needs: test
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout do codigo
+        uses: actions/checkout@v4
+
+      - name: Configurar JDK 17
+        uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '17'
+
+      - name: Gerar dist/SistemaFarmacia.jar
+        run: bash build.sh
+
+      - name: Publicar o JAR como artefato do build
+        uses: actions/upload-artifact@v4
+        with:
+          name: SistemaFarmacia-jar
+          path: dist/SistemaFarmacia.jar
+          if-no-files-found: error

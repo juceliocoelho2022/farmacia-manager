@@ -1,5 +1,6 @@
 # 💊 Sistema Farmácia — Gestão e PDV (Desktop)
 
+[![CI](https://github.com/juceliocoelho2022/farmacia-manager/actions/workflows/ci.yml/badge.svg)](https://github.com/juceliocoelho2022/farmacia-manager/actions/workflows/ci.yml)
 ![Java](https://img.shields.io/badge/Java-17%2B-orange?logo=openjdk&logoColor=white)
 ![UI](https://img.shields.io/badge/UI-Java%20Swing-blue)
 ![Build](https://img.shields.io/badge/build-javac%20%2B%20jpackage-informational)

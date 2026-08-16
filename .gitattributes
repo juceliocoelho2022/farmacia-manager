@@ -1,0 +1,17 @@
+# Normaliza finais de linha automaticamente no repositorio (LF)
+* text=auto eol=lf
+
+# Codigo-fonte e scripts sempre em LF
+*.java text eol=lf
+*.sh    text eol=lf
+
+# Scripts do Windows precisam de CRLF
+*.bat   text eol=crlf
+
+# Arquivos binarios (nao aplicar normalizacao/diff textual)
+*.png   binary
+*.jar   binary
+
+# Ajuda o GitHub Linguist a classificar o projeto como Java,
+# tratando as capturas de tela como documentacao.
+docs/**  linguist-documentation
