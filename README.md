@@ -19,6 +19,10 @@ dados externo — os dados ficam salvos localmente na própria máquina.
 > Projeto **independente** e autocontido: não usa banco de dados, não precisa
 > de internet e só depende da biblioteca padrão do Java.
 
+> 🌐 **Este repositório também inclui o site institucional da farmácia**, feito
+> em **React + Vite**, na pasta [`web/`](web/). É a vitrine pública (produtos,
+> horários, contato e WhatsApp). Veja o [README do site](web/README.md).
+
 ---
 
 ## 📸 Telas
